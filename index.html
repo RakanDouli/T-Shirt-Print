@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://css.gg/shopping-cart.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" integrity="sha512-Cb0WDP6lVyVaQJulFMEOBGpkgqU6UAOEBpthbb9BfdhmUXnmYQwobuCm6Xp2YYL6Pd/l0ZA5Up/ijp0fu+nFpQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<header>
+    <nav>
+        <section class="first-nav">
+            <div class="logo-container"><a href="/index.html"><img src="/img/logo.svg" alt=""></a></div>
+            
+            <div class="menu-btn">
+                  
+                    <buton for="sss" class="menu-showhide"> <i class="fas fa-bars"> </i> MENU</buton>
+                    <ul class="menu-links">
+                        <li class="link-product">PRODUCTS</li>
+                        <li class="link-Aboutus">ABOUT US</li>
+                        <li class="link-Aboutus">CONTACT</li>
+                    </ul>
+                </div>
+                
+            <li class="link-Desinges">BECOME A DESIGNER</li>
+        </section>
+        <section class="second-nav">
+        
+            <div class="nav-items">
+                <div class="socialmedia">
+                    <div class="social-button">
+                                <i id="s-media-icon" class="fab fa-facebook-f"></i>
+                                <div class="blurred">
+                                        <span></span><span></span>
+                                </div>
+                    </div>
+                    <div class="social-button">
+                                <i id="s-media-icon" class="fab fa-instagram-square"></i>
+                                <div class="blurred">
+                                    <span></span><span></span>
+                                </div>
+                    </div>
+                    <div class="social-button">
+                            <i id="s-media-icon" class="fab fa-snapchat"></i>
+                            <div class="blurred">
+                                <span></span><span></span>
+                            </div>
+                    </div>
+    
+                </div>
+            
+    
+                <div class="nav-items-right">
+                       <div class="login">
+                            <i class="material-icons">person </i>
+                            <button class="nav-link">  Log In / Sign Up </button> 
+                       </div>
+                       <div class="basket">
+                          
+                            <button class="nav-basket-btn" > 
+                                <svg class="nav-basket-logo"   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+                                <p id="nav-items-count">0</p>
+                            </button>
+                            <div class="nav-basket" id="dorpdown">
+                                <div class="basket-list">
+                              
+                                </div> 
+
+                                    
+                                <button class="btn2" onclick="location.href =( '/buynow.html')">Buy Now</button> 
+                                
+                            </div> 
+                               
+                       </div>
+                    
+                        
+                        
+                    </div>
+
+             </div>
+         
+        </section>
+
+    </nav>
+</header>
+
+<main>
+
+    <div class="header-container">
+
+        <div class="header-card-1 header-card"><img id="painting"src="/img/3.png" alt=""></div>
+        <div class="header-card-2 header-card"><img id="painting"src="/img/vectorstock_204-removebg-preview.png" alt=""></div>
+        <div class="header-card-3 header-card"><img id="painting" id="title"src="/img/Artboard38.png" alt=""></div>
+        <canvas></canvas>
+    </div>
+<section class="sort-options">
+    <input class="input-filter" type="text" placeholder=" What are you looking for...">
+    <div class="btn-filter">
+        <button class="sort-name-asce">A-Z OR Z-A</button>
+        <button class="sort-price">Sort by Price</button>
+        
+    </div>
+</section>    
+<section class="list-display">
+    <div class="list"> 
+
+    </div>
+    <div id="modal"></div>
+</section>
+
+</main>
+
+<svg>
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+            <feColorMatrix in='blur' mode='matrix' values=' 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9' result='goo'/>
+            <feComposite in='SourceGraphic' in2='goo' operator='atop'/>
+        </filter>
+    </defs>
+</svg> 
+
+  
+<footer class="footer-section">
+        
+    <div class="footer-first-line">
+        <div class="contact-number">
+            <i class="fas fa-phone"></i>
+               <div class="phome">
+                <h1 class="Call-us">Call us</h1>
+                <p class="adress">+31 63 9999 9999</p>
+               </div>
+           </div>
+        <div class="contact-location">
+         <i class="fas fa-map-marker-alt"></i>
+            <div class="location">
+             <h1 class="find-us">Find us</h1>
+             <p class="adress">Ankaradreef 20, 3564VK Utrecht. The Netherlands</p>
+            </div>
+        </div>
+     
+           <div class="contact-mail">
+            <i class="far fa-envelope-open"></i>
+               <div class="mail">
+                <h1 class="mail-us">Mail us</h1>
+                <p class="adress">info@cultural-universal.com</p>
+               </div>
+           </div>
+    </div>
+
+    <div class="footer-content">
+        <div class="left-content">
+            <div class="footer-logo">
+                <a href="/index.html"><img src="/img/logo.svg" class="img-fluid" alt="logo"></a>
+            </div>
+            <div class="footer-text">
+                <p> Harum excepturi reiciendis adipisci hic incidunt sed voluptate dolore necessitatibus optio, </p>
+            </div>
+            <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+            </div>
+        </div>
+   
+        
+
+
+        <div class="mid-content">
+            <div class="footer-widget-heading">
+                <h1>Our Links</h1>
+            </div>
+            <ul>
+                
+                
+                <li><a href="#">Services</a></li>
+               
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Latest News</a></li>
+            </ul>
+        </div>
+
+    
+        <div class="right-content">
+            <div class="footer-widget">
+                <div class="footer-widget-heading">
+                    <h1>Subscribe</h1>
+                </div>
+                <div class="footer-text">
+                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                </div>
+                <div class="subscribe-form">
+                    <form action="#">
+                        <input type="text" placeholder="Email Address">
+                        <button><i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cr">
+        <div class="copyright">
+            <p>Copyright &copy; 2020 <a href="#">RAKAN DOULI</a></p>
+        </div>
+    </div>
+
+               
+              
+            
+           
+
+ </footer>
+<script src="/vanilla-tilt.js"></script>
+
+<script type="text/javascript">
+    
+
+    VanillaTilt.init(document.querySelectorAll("#painting"), {
+            max: 25,
+            speed: 400
+    });   
+
+</script>
+ <script type="module" src="app.js"></script>
+
+</body>
+</html>
+
+
+
